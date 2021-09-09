@@ -5,10 +5,12 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF6Q3Q2EFD"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-PF6Q3Q2EFD');
+      gtag("config", "G-PF6Q3Q2EFD");
     </script>
     <meta charset="utf-8" />
     <title>COECYS | Home</title>
@@ -31,7 +33,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- ================== END core-css ================== -->
+    <style>
+      .conferencista h1 {
+        color: #001c56;
+      }
+      .conferencista h3 {
+        color: #1c4bad;
+      }
+
+      .conferencistas-section img {
+        max-width: 20rem;
+      }
+
+      .conferencista {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: blue;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .conferencista {
+          flex-direction: column;
+        }
+
+        .conferencistas-section .col .conferencista:nth-child(n + 2) {
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- begin #page-loader -->
@@ -42,7 +74,7 @@
     <!-- BEGIN #page-container -->
     <div id="page-container">
       <!-- BEGIN header -->
-      <div class="header header-float">
+      <div class="header header-default">
         <div class="container d-flex">
           <div class="header-logo">
             <a href="index.html" class="logo-link">
@@ -57,10 +89,10 @@
               <!--<div class="header-nav-item">
                 <a href="speakers.html" class="header-nav-link">Talleres</a>
               </div>-->
-              <!-- <div class="header-nav-item">
+              <div class="header-nav-item">
                 <a href="speakers.html" class="header-nav-link">Conferencistas y Talleres</a>
               </div>
-              <div class="header-nav-item">
+              <!--<div class="header-nav-item">
                 <a href="sponsors.html" class="header-nav-link">Patrocinadores</a>
               </div> -->
               <div class="header-nav-item">
@@ -69,7 +101,11 @@
             </div>
           </div>
           <div class="header-btn">
-            <a href="#" class="btn btn-primary fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            <a
+              href="#"
+              class="btn btn-primary fw-bold rounded-pill"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
               >Promoción RADIO <i class="fa fa-arrow-right ms-1 opacity-5"></i
             ></a>
           </div>
@@ -201,6 +237,49 @@
       </div>
       <!-- END section -->
 
+      <section>
+        <div class="container pt-5 pb-5 conferencistas-section">
+          <div class="col">
+            <!--Begin conferencista-->
+            <div class="conferencista" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <div class="info">
+                <h1>
+                  Microservicios: <br />
+                  ¿Amigos o enemigos?
+                </h1>
+                <h3>28 de septiembre 12 PM</h3>
+              </div>
+              <img src="./assets/Conferencistas/Jorge Cajas/Jorge Cajas.png" alt="microservicios" />
+              <img
+                src="./assets/Conferencistas/Jorge Cajas/Jorge Cajas info.png"
+                alt="microservicios"
+              />
+            </div>
+            <!--End of conferencista-->
+            <hr />
+            <!--Begin conferencista-->
+            <div class="conferencista" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <img
+                src="./assets/Conferencistas/Alberto De Rossi/Alberto De Rossi info.png"
+                alt="microservicios"
+              />
+              <img
+                src="./assets/Conferencistas/Alberto De Rossi/Alberto De Rossi.png"
+                alt="microservicios"
+              />
+              <div class="info">
+                <h1>
+                  Inteligencia de <br />
+                  negocio en la nube
+                </h1>
+                <h3>28 de septiembre 11 AM</h3>
+              </div>
+            </div>
+            <!--End of conferencista-->
+          </div>
+        </div>
+      </section>
+
       <!-- BEGIN footer -->
       <div class="footer">
         <div class="container">
@@ -228,28 +307,28 @@
             <div class="col-lg-3 mb-4 mb-lg-0">
               <h4 class="footer-title">Conferencias</h4>
               <ul class="footer-link-list">
-                <li><a href="#">Community Standards</a></li>
-                <li><a href="#">Data Policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <!-- <li><a href="#">Community Standards</a></li> -->
+                <!-- <li><a href="#">Data Policy</a></li> -->
+                <!-- <li><a href="#">Cookie Policy</a></li> -->
+                <!-- <li><a href="#">Terms of Service</a></li> -->
               </ul>
             </div>
             <div class="col-lg-3 mb-4 mb-lg-0">
               <h4 class="footer-title">Patrocinadores</h4>
               <ul class="footer-link-list">
-                <li><a href="#">Shop Online</a></li>
-                <li><a href="#">Store App</a></li>
-                <li><a href="#">Recycling Programme</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Shopping Help</a></li>
+                <!-- <li><a href="#">Shop Online</a></li> -->
+                <!-- <li><a href="#">Store App</a></li> -->
+                <!-- <li><a href="#">Recycling Programme</a></li> -->
+                <!-- <li><a href="#">Order Status</a></li> -->
+                <!-- <li><a href="#">Shopping Help</a></li> -->
               </ul>
             </div>
             <div class="col-lg-3 mb-4 mb-lg-0">
               <h4 class="footer-title">Talleres</h4>
               <ul class="footer-link-list">
-                <li><a href="#">Contact Form</a></li>
-                <li><a href="#">Live Chat Support</a></li>
-                <li><a href="#">Portal Help Center</a></li>
+                <!-- <li><a href="#">Contact Form</a></li> -->
+                <!-- <li><a href="#">Live Chat Support</a></li> -->
+                <!-- <li><a href="#">Portal Help Center</a></li> -->
               </ul>
             </div>
           </div>
@@ -266,30 +345,53 @@
     </div>
     <!-- end page container -->
 
-
-    
-
-    
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Promoción COECYS</h5>
-        <small>Debes completar el formulario de google dentro del cuerpo de esta tarjeta.</small>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <iframe style="width: 100%; height: 30rem;" src="https://docs.google.com/forms/d/e/1FAIpQLSf0g5IHUaqCpdUcbt6f0s_OTvFkM6QN_5UkjCV57gj3URlh3g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No participar</button>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Promoción COECYS</h5>
+            <small
+              >Debes completar el formulario de google dentro del cuerpo de esta tarjeta.</small
+            >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              style="width: 100%; height: 30rem"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf0g5IHUaqCpdUcbt6f0s_OTvFkM6QN_5UkjCV57gj3URlh3g/viewform?embedded=true"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Cargando…</iframe
+            >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              No participar
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <!-- ================== BEGIN BASE JS ================== -->
+
     <script src="./assets/js/corporate/vendor.min.js"></script>
     <script src="./assets/js/corporate/app.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
